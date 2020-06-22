@@ -12,7 +12,7 @@ import dash_bootstrap_components as dbc
 from app2 import app
 import plotly.graph_objects as go
 
-income = pickle.load(open('C://Users/WASSIM/Desktop/Deployment-flask-master/pickle/income_per_hour.pkl','rb'))
+
 region=['Tunis','Manouba','ben arous',
         'ariana','Bizerte','beja', 'jandouba', 'nabeul' , 'zaghouane', 'silana', 'kef' ,
         'kasserine' , 'kairouane' , 'Sousse' , 'monastir', 'Mahdia' , 'Sfax' , 'sidi bouzid' , 'gafsa' ,
@@ -219,7 +219,6 @@ def range(inter_range):
 
 
     
-income = pickle.load(open('C://Users/WASSIM/Desktop/Deployment-flask-master/pickle/income_per_hour.pkl','rb'))
       
 
 
