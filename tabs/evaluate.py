@@ -41,18 +41,18 @@ layout = html.Div([
     [Output('hour', 'figure'),Output('week', 'figure'),Output('month', 'figure')],
     [Input('inter_hour', 'children')])
 def cnn(inter_hour):
-    hour = pickle.load(open('C://Users/WASSIM/Desktop/Deployment-flask-master/pickle/income_per_hour.pkl','rb'))
-    week = pickle.load(open('C://Users/WASSIM/Desktop/Deployment-flask-master/pickle/income_per_week.pkl','rb'))
-    month = pickle.load(open('C://Users/WASSIM/Desktop/Deployment-flask-master/pickle/income_per_month.pkl','rb'))
+    hour = pickle.load(open('pickle/income_per_hour.pkl','rb'))
+    week = pickle.load(open('pickle/income_per_week.pkl','rb'))
+    month = pickle.load(open('pickle/income_per_month.pkl','rb'))
     return hour,week,month
 @app.callback(
     [Output('loss_hour', 'figure'),Output('loss_week', 'figure'),Output('loss_month', 'figure')],
     [Input('inter_hour_loss', 'children')])
 
 def cn(inter):
-    hourloss =  pickle.load(open('C://Users/WASSIM/Desktop/Deployment-flask-master/pickle/income_per_hour_loss.pkl','rb'))
-    weekloss =  pickle.load(open('C://Users/WASSIM/Desktop/Deployment-flask-master/pickle/income_per_week_loss.pkl','rb'))
-    monthloss =  pickle.load(open('C://Users/WASSIM/Desktop/Deployment-flask-master/pickle/income_per_month_loss.pkl','rb'))
+    hourloss =  pickle.load(open('pickle/income_per_hour_loss.pkl','rb'))
+    weekloss =  pickle.load(open('pickle/income_per_week_loss.pkl','rb'))
+    monthloss =  pickle.load(open('pickle/income_per_month_loss.pkl','rb'))
     return hourloss,weekloss,monthloss
 
 
