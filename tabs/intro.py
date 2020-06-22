@@ -23,7 +23,7 @@ layout = html.Div([
      ])
 def fig(inter_fig):
 
-    df = pd.read_csv('D://plt/distance.csv')
+    df = pd.read_csv('csv/distance.csv')
     df['lat_pick'] = df['lat_pick'].astype(float)
     df['long_pick'] = df['long_pick'].astype(float)
     df['status']=df['status'].map({0: 'accepted', 1: 'declined',3:"waiting"})
